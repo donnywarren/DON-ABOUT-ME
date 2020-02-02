@@ -1,0 +1,24 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+
+}
+
+div {
+  margin: 0 auto;
+  height: 200px;
+  width: 600px;
+  background: blue;
+}
+h1 {
+  font-size: 66px;
+}
