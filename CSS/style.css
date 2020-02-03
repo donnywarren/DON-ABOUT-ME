@@ -37,8 +37,8 @@ body {
 }
 
 .black-curtain {
-  -webkit-animation: black-curtain 0s ease-in-out 4s forwards;
-  animation: black-curtain 0s ease-in-out 4s forwards;
+  -webkit-animation: black-curtain 0s ease-in-out 6s forwards;
+  animation: black-curtain 0s ease-in-out 6s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   animation-duration: 2s;
@@ -59,8 +59,8 @@ body {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: title 2s linear 0s forwards;
-  animation: title 2s linear 0s forwards;
+  -webkit-animation: title 3s linear 0s forwards;
+  animation: title 3s linear 0s forwards;
 }
 
 @keyframes title {
@@ -80,8 +80,8 @@ body {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: subtitle 2s linear 2s forwards;
-  animation: subtitle 2s linear 2s forwards;
+  -webkit-animation: subtitle 3s linear 3s forwards;
+  animation: subtitle 3s linear 3s forwards;
 }
 
 @keyframes subtitle {
@@ -105,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .definition {
@@ -126,9 +127,20 @@ body {
 
 .main-story {
   width: 55%;
-  height: 800px;
-  background: rgba(255, 255, 255, .75);
-  border: 1px solid #e8e8e8;
+  height: 100%;
+  background: rgba(255, 255, 255, .55);
+  border: 1px solid #828080;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 28px;
+  text-align: center;
+  padding: 10px 0 20px 0;
 }
 
 .right-content-flexbox {
@@ -158,6 +170,7 @@ body {
   box-shadow: 7px 9px 8px #969595;
   outline: none;
   margin: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-btn:hover, .carnival-btn:hover {
@@ -169,9 +182,9 @@ body {
   transform: translateY(4px);
 }
 
-.modal-window {
+.modal-window-contact {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: center;
   top: 0;
   left: 0;
@@ -180,19 +193,21 @@ body {
   background-color: rgba(0, 0, 0, .5);
 }
 
+.show {
+  display: flex;
+}
+
 .contact-box {
   position: relative;
   width: 402px;
   height: 602px;
   background-color: #fff;
-  top: 50px;
+  top: 100px;
   border: 1px solid #000;
 }
 
 .contact-box-info {
   width: 100%;
-  /* height:px; */
-  /* text-align: center; */
 }
 
 h3 {
@@ -216,4 +231,131 @@ h3 {
 
 .close-contact:hover {
   cursor: pointer;
+}
+
+.modal-window-carnival {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.carnival-flexbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.carnival-tools-window{
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.close-contact-tools {
+  position: absolute;
+  font-size: 34px;
+  top: 6px;
+  right: 6px;
+}
+
+.close-contact-tools:hover {
+  cursor: pointer;
+}
+
+.hat-tools {
+  position: absolute;
+  height: 130px;
+  width: 305px;
+  top: 5px;
+  left: 45px;
+  z-index: 300;
+}
+
+.hat-tools {
+  cursor: pointer;
+}
+
+.glasses-tools {
+  position: absolute;
+  height: 170px;
+  width: 180px;
+  top: 135px;
+  left: 105px;
+  z-index: 100;
+}
+
+.glasses-tools {
+  cursor: pointer;
+}
+
+.moustache-tools {
+  position: absolute;
+  height: 100px;
+  width: 280px;
+  top: 275px;
+  left: 55px;
+  z-index: 200;
+}
+
+.moustache-tools:hover {
+  cursor: pointer;
+}
+
+
+.carnival-display-window {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-image: url("../assets/selfie-for-web.jpg");
+  background-size: cover;
+  border: 2px solid #000;
+  margin-left: 10px;
+}
+
+.hat {
+  position: absolute;
+  display: none;
+  height: 150px;
+  width: 325px;
+  top: 5px;
+  left: 75px;
+}
+
+.glasses {
+  position: absolute;
+  display: none;
+  height: 190px;
+  width: 200px;
+  top: 115px;
+  left: 145px;
+}
+
+.moustache {
+  position: absolute;
+  display: none;
+  height: 100px;
+  width: 300px;
+  top: 225px;
+  left: 100px;
+}
+
+.text-tools {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  left: 20px;
+  bottom: 5px;
+}
+
+.show-carnival {
+  display: inherit;
 }
